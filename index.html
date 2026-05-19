@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Snazzy Boutique — Custom stitching, bridal wear, Korean dresses & designer outfits. Made for you, only you." />
+  <meta property="og:title" content="Snazzy Boutique — Wear Your Story" />
+  <meta property="og:description" content="Custom stitching, bridal wear & designer outfits crafted exclusively for you." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0F0C08" />
+  <title>Snazzy Boutique — Wear Your Story</title>
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230F0C08'/><text y='72' x='10' font-size='65' font-family='Georgia,serif' fill='%23B8975A'>S</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ GRAIN OVERLAY ═══ -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ═══ PRELOADER ═══ -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <div class="pre-logo">SB</div>
+      <div class="pre-bar"><div class="pre-fill"></div></div>
+      <div class="pre-label">Crafting your experience</div>
+    </div>
+  </div>
+
+  <!-- ═══ CURSOR (desktop) ═══ -->
+  <div id="cursor" aria-hidden="true">
+    <div class="cur-dot"></div>
+    <div class="cur-ring"></div>
+    <div class="cur-label"></div>
+  </div>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Snazzy Boutique Home">
+        <span class="nl-main">SNAZZY</span>
+        <span class="nl-sub">BOUTIQUE</span>
+      </a>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Snazzy%20Boutique!%20I%20want%20to%20book%20a%20fitting." class="nav-cta btn-outline" target="_blank" rel="noopener">Book a Fitting</a>
+      <button class="nav-burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══ MOBILE MENU ═══ -->
+  <div id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mm-inner">
+      <div class="mm-links">
+        <a href="#about" class="mm-link">About</a>
+        <a href="#services" class="mm-link">Services</a>
+        <a href="#lookbook" class="mm-link">Lookbook</a>
+        <a href="#contact" class="mm-link">Contact</a>
+      </div>
+      <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Snazzy%20Boutique!%20I%20want%20to%20book%20a%20fitting." class="mm-cta" target="_blank" rel="noopener">
+        Book a Fitting →
+      </a>
+      <div class="mm-foot">snazzyboutique.in</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ═══ HERO ═══ -->
+    <section id="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-tag reveal-up">Est. [Year] &nbsp;·&nbsp; [Your City]</div>
+
+      <h1 class="hero-title" aria-label="Wear Your Story">
+        <span class="ht-line"><span class="ht-inner">Wear</span></span>
+        <span class="ht-line ht-italic"><span class="ht-inner">Your</span></span>
+        <span class="ht-line"><span class="ht-inner">Story.</span></span>
+      </h1>
+
+      <p class="hero-sub reveal-up">
+        Custom stitching &amp; designer outfits<br class="hero-br" />
+        made exclusively for you.
+      </p>
+
+      <div class="hero-actions reveal-up">
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20place%20a%20custom%20order." class="btn-primary magnetic" target="_blank" rel="noopener" data-cursor="Order">
+          <span class="btn-text">Start Your Order</span>
+          <span class="btn-arrow">→</span>
+          <span class="btn-bg"></span>
+        </a>
+        <a href="#lookbook" class="btn-ghost" data-cursor="View">View Lookbook</a>
+      </div>
+
+      <!-- Rotating badge -->
+      <div class="hero-badge" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="badge-svg">
+          <defs>
+            <path id="badgePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/>
+          </defs>
+          <text class="badge-text">
+            <textPath href="#badgePath" startOffset="0%">CUSTOM MADE · BOUTIQUE TAILORING · BRIDAL WEAR · </textPath>
+          </text>
+        </svg>
+        <div class="badge-center">✦</div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hs-line"></div>
+        <span class="hs-label">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══ MARQUEE ═══ -->
+    <div class="marquee-section" aria-label="Our services">
+      <div class="marquee-track">
+        <div class="marquee-row" aria-hidden="true">
+          <div class="mr-inner">
+            <span>Custom Stitching</span><span class="md">✦</span>
+            <span>Bridal Wear</span><span class="md">✦</span>
+            <span>Korean Dresses</span><span class="md">✦</span>
+            <span>Party Wear</span><span class="md">✦</span>
+            <span>Gowns</span><span class="md">✦</span>
+            <span>Saree Blouse</span><span class="md">✦</span>
+            <span>Ethnic Wear</span><span class="md">✦</span>
+            <span>Western Wear</span><span class="md">✦</span>
+            <span>Designer Outfits</span><span class="md">✦</span>
+            <span>Pre-Orders Open</span><span class="md">✦</span>
+          </div>
+          <div class="mr-inner" aria-hidden="true">
+            <span>Custom Stitching</span><span class="md">✦</span>
+            <span>Bridal Wear</span><span class="md">✦</span>
+            <span>Korean Dresses</span><span class="md">✦</span>
+            <span>Party Wear</span><span class="md">✦</span>
+            <span>Gowns</span><span class="md">✦</span>
+            <span>Saree Blouse</span><span class="md">✦</span>
+            <span>Ethnic Wear</span><span class="md">✦</span>
+            <span>Western Wear</span><span class="md">✦</span>
+            <span>Designer Outfits</span><span class="md">✦</span>
+            <span>Pre-Orders Open</span><span class="md">✦</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-visual">
+            <div class="av-img reveal-clip">
+              <div class="av-inner" aria-label="Boutique interior visual"></div>
+            </div>
+            <div class="av-float reveal-up">
+              <span class="avf-label">Since</span>
+              <span class="avf-year">'24</span>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <div class="s-label reveal-up">Our Story</div>
+            <h2 class="s-title reveal-up">
+              Where Fabric<br />
+              <em>Becomes Feeling</em>
+            </h2>
+            <p class="about-p reveal-up">
+              Every woman deserves to wear something made exactly for her — not a size that almost fits, not a design that sort of works. At Snazzy Boutique, we believe your outfit should be as unique as you are.
+            </p>
+            <p class="about-p reveal-up">
+              From hand-stitched bridal lehengas to Seoul-inspired co-ords, every piece leaves our studio with real craftsmanship stitched into every seam.
+            </p>
+
+            <div class="about-stats reveal-up">
+              <div class="stat">
+                <span class="stat-n" data-target="1000">0</span><span class="stat-plus">+</span>
+                <span class="stat-l">Outfits Crafted</span>
+              </div>
+              <div class="stat">
+                <span class="stat-n" data-target="500">0</span><span class="stat-plus">+</span>
+                <span class="stat-l">Happy Customers</span>
+              </div>
+              <div class="stat">
+                <span class="stat-n" data-target="5">0</span><span class="stat-plus">+</span>
+                <span class="stat-l">Years of Craft</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn-text reveal-up">
+              <span>Book a consultation</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICES ═══ -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <div class="s-label">What We Do</div>
+          <h2 class="s-title">Crafted for<br /><em>Every Occasion</em></h2>
+        </div>
+        <div class="services-grid">
+
+          <article class="svc-card reveal-up magnetic" data-cursor="Explore" style="--i:0">
+            <div class="svc-num">01</div>
+            <h3 class="svc-title">Bridal Wear</h3>
+            <p class="svc-desc">Custom lehengas, gowns &amp; sarees crafted with devotion for your most important day.</p>
+            <div class="svc-arrow">→</div>
+            <div class="svc-bg"></div>
+          </article>
+
+          <article class="svc-card reveal-up magnetic" data-cursor="Explore" style="--i:1">
+            <div class="svc-num">02</div>
+            <h3 class="svc-title">Custom Stitching</h3>
+            <p class="svc-desc">Your measurements, your design, your fabric. Stitched exactly the way you imagined it.</p>
+            <div class="svc-arrow">→</div>
+            <div class="svc-bg"></div>
+          </article>
+
+          <article class="svc-card reveal-up svc-featured magnetic" data-cursor="Explore" style="--i:2">
+            <div class="svc-num">03</div>
+            <h3 class="svc-title">Korean Style Dresses</h3>
+            <p class="svc-desc">Seoul-inspired silhouettes beautifully adapted for South Asian figures and sensibilities.</p>
+            <div class="svc-arrow">→</div>
+            <div class="svc-bg"></div>
+          </article>
+
+          <article class="svc-card reveal-up magnetic" data-cursor="Explore" style="--i:3">
+            <div class="svc-num">04</div>
+            <h3 class="svc-title">Party &amp; Gowns</h3>
+            <p class="svc-desc">Statement pieces for every celebration. Floor-length to cocktail, we do it all.</p>
+            <div class="svc-arrow">→</div>
+            <div class="svc-bg"></div>
+          </article>
+
+          <article class="svc-card reveal-up magnetic" data-cursor="Explore" style="--i:4">
+            <div class="svc-num">05</div>
+            <h3 class="svc-title">Ethnic &amp; Saree Blouse</h3>
+            <p class="svc-desc">Hand-finished blouses, salwar suits &amp; ethnic wear for every festival and function.</p>
+            <div class="svc-arrow">→</div>
+            <div class="svc-bg"></div>
+          </article>
+
+          <article class="svc-card reveal-up magnetic" data-cursor="Explore" style="--i:5">
+            <div class="svc-num">06</div>
+            <h3 class="svc-title">Western Wear</h3>
+            <p class="svc-desc">Custom blazers, co-ords &amp; contemporary silhouettes for the modern woman in you.</p>
+            <div class="svc-arrow">→</div>
+            <div class="svc-bg"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ LOOKBOOK ═══ -->
+    <section id="lookbook" class="section lookbook-section">
+      <div class="container">
+        <div class="section-head center reveal-up">
+          <div class="s-label">Our Work</div>
+          <h2 class="s-title">The Lookbook</h2>
+        </div>
+      </div>
+      <div class="lookbook-grid">
+
+        <div class="lb-item lb-tall reveal-clip" data-cursor="View" style="--delay:0s">
+          <div class="lb-img" style="--g1:#3d1a0a;--g2:#b8975a;--g3:#f5edd8"></div>
+          <div class="lb-cap"><span>Bridal Lehenga</span></div>
+        </div>
+
+        <div class="lb-item reveal-clip" data-cursor="View" style="--delay:0.1s">
+          <div class="lb-img" style="--g1:#0d1a12;--g2:#4a7a5a;--g3:#b2c4b2"></div>
+          <div class="lb-cap"><span>Korean Edit</span></div>
+        </div>
+
+        <div class="lb-item reveal-clip" data-cursor="View" style="--delay:0.2s">
+          <div class="lb-img" style="--g1:#1a0d15;--g2:#7a3a5a;--g3:#d4a5a5"></div>
+          <div class="lb-cap"><span>Party Gown</span></div>
+        </div>
+
+        <div class="lb-item lb-tall reveal-clip" data-cursor="View" style="--delay:0.1s">
+          <div class="lb-img" style="--g1:#1a1005;--g2:#8a6a30;--g3:#c8b99a"></div>
+          <div class="lb-cap"><span>Custom Gown</span></div>
+        </div>
+
+        <div class="lb-item lb-wide reveal-clip" data-cursor="View" style="--delay:0.2s">
+          <div class="lb-img" style="--g1:#0a0f14;--g2:#2a4a5a;--g3:#7a9aaa"></div>
+          <div class="lb-cap"><span>Ethnic Collection</span></div>
+        </div>
+
+        <div class="lb-item reveal-clip" data-cursor="View" style="--delay:0.3s">
+          <div class="lb-img" style="--g1:#10080f;--g2:#4a2060;--g3:#9b80b0"></div>
+          <div class="lb-cap"><span>Western Wear</span></div>
+        </div>
+
+      </div>
+      <div class="lb-note container reveal-up">
+        Replace these placeholders with your real outfit photos.
+      </div>
+    </section>
+
+    <!-- ═══ PROCESS ═══ -->
+    <section id="process" class="section process-section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <div class="s-label">How It Works</div>
+          <h2 class="s-title">From Idea<br /><em>to Wardrobe</em></h2>
+        </div>
+        <div class="process-steps">
+
+          <div class="ps-step reveal-up" style="--i:0">
+            <div class="ps-num">01</div>
+            <div class="ps-body">
+              <h3>Consultation</h3>
+              <p>Share your inspiration, occasion &amp; preferences. We'll guide you through fabrics and silhouettes.</p>
+            </div>
+            <div class="ps-connector" aria-hidden="true"></div>
+          </div>
+
+          <div class="ps-step reveal-up" style="--i:1">
+            <div class="ps-num">02</div>
+            <div class="ps-body">
+              <h3>Measurements</h3>
+              <p>Precise measurements taken in-store or shared via our guided WhatsApp process.</p>
+            </div>
+            <div class="ps-connector" aria-hidden="true"></div>
+          </div>
+
+          <div class="ps-step reveal-up" style="--i:2">
+            <div class="ps-num">03</div>
+            <div class="ps-body">
+              <h3>Crafting</h3>
+              <p>Your outfit is handcrafted with care. Progress updates shared at each stage.</p>
+            </div>
+            <div class="ps-connector" aria-hidden="true"></div>
+          </div>
+
+          <div class="ps-step reveal-up" style="--i:3">
+            <div class="ps-num">04</div>
+            <div class="ps-body">
+              <h3>Your Moment</h3>
+              <p>Try it on. Feel the difference a perfectly fitted outfit makes. That's Snazzy.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ═══ -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="s-label center reveal-up">What They Say</div>
+
+        <div class="testi-wrap" id="testiWrap">
+          <button class="testi-nav tn-prev" id="tnPrev" aria-label="Previous testimonial">←</button>
+
+          <div class="testi-track" id="testiTrack">
+            <div class="testi-slide active">
+              <div class="tq">"</div>
+              <p>I cried when I saw my bridal lehenga. It was exactly what I had in my heart for years — and Snazzy brought it to life perfectly.</p>
+              <div class="ta">
+                <span class="ta-name">Priya R.</span>
+                <span class="ta-detail">Bride · December 2024</span>
+              </div>
+            </div>
+            <div class="testi-slide">
+              <div class="tq">"</div>
+              <p>The Korean-style dress I ordered was stunning. Better than anything I'd seen online, and it fit my body so perfectly.</p>
+              <div class="ta">
+                <span class="ta-name">Ananya K.</span>
+                <span class="ta-detail">College Farewell Look</span>
+              </div>
+            </div>
+            <div class="testi-slide">
+              <div class="tq">"</div>
+              <p>Every time I wear something from Snazzy, someone asks where I got it. The quality and attention to detail is unmatched anywhere in the city.</p>
+              <div class="ta">
+                <span class="ta-name">Meera S.</span>
+                <span class="ta-detail">Regular Customer</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="testi-nav tn-next" id="tnNext" aria-label="Next testimonial">→</button>
+        </div>
+
+        <div class="testi-dots" role="tablist" aria-label="Testimonials">
+          <button class="td active" data-i="0" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+          <button class="td" data-i="1" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+          <button class="td" data-i="2" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA ═══ -->
+    <section id="contact" class="section cta-section">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-inner">
+          <div class="s-label center reveal-up">Get Started</div>
+          <h2 class="cta-title reveal-up">
+            Your Dream Outfit<br />
+            <em>is One Message Away</em>
+          </h2>
+          <p class="cta-sub reveal-up">Pre-orders open &nbsp;·&nbsp; Custom orders &nbsp;·&nbsp; Bridal consultations</p>
+
+          <div class="cta-actions reveal-up">
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Snazzy%20Boutique!%20I%20want%20to%20book%20a%20fitting." class="btn-primary large magnetic" target="_blank" rel="noopener" data-cursor="Let's go">
+              <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.057 23.882c-.072.267.178.508.443.425l6.174-1.946C8.148 23.43 10.03 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.52-5.17-1.426l-.37-.22-3.826 1.206 1.17-3.72-.24-.383C2.596 15.9 2 14.02 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              <span class="btn-text">WhatsApp Us Now</span>
+              <span class="btn-arrow">→</span>
+              <span class="btn-bg"></span>
+            </a>
+            <a href="https://instagram.com/snazzyboutique" class="btn-ghost" target="_blank" rel="noopener">Follow on Instagram</a>
+          </div>
+
+          <div class="cta-tags reveal-up">
+            <span>Custom Orders</span>
+            <span>Pre-Orders</span>
+            <span>Bridal Slots</span>
+            <span>Walk-ins Welcome</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="ft-logo">
+          <span class="ftl-main">SNAZZY</span>
+          <span class="ftl-sub">BOUTIQUE</span>
+        </div>
+        <div class="ft-tagline">Wear Your Story.</div>
+      </div>
+
+      <div class="footer-mid">
+        <div class="fc">
+          <h4>Services</h4>
+          <ul>
+            <li>Custom Stitching</li>
+            <li>Bridal Wear</li>
+            <li>Korean Dresses</li>
+            <li>Party Wear &amp; Gowns</li>
+            <li>Saree Blouse</li>
+            <li>Ethnic &amp; Western</li>
+          </ul>
+        </div>
+        <div class="fc">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://instagram.com/snazzyboutique" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/snazzyboutique" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="fc">
+          <h4>Visit Us</h4>
+          <p>[Your Address]<br />[City, State — PIN]</p>
+          <p class="fc-hours">Mon–Sat &nbsp;·&nbsp; 10am–7pm</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Snazzy Boutique. All rights reserved.</span>
+        <span>snazzyboutique.in</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ FLOATING WHATSAPP ═══ -->
+  <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Snazzy%20Boutique!" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.057 23.882c-.072.267.178.508.443.425l6.174-1.946C8.148 23.43 10.03 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.52-5.17-1.426l-.37-.22-3.826 1.206 1.17-3.72-.24-.383C2.596 15.9 2 14.02 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span class="wa-pulse" aria-hidden="true"></span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
